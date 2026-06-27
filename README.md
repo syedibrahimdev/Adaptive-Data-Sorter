@@ -42,19 +42,19 @@ This project builds a system that checks the data's current state first, then pi
 
 ## 🧠 How This System Decides
 
-                ┌─────────────────────┐
+                ┌──────────────────────┐
                 │   Is data sorted?    │
                 └──────────┬───────────┘
                       Yes ──┴── No
                        │         │
                  Skip sort       ▼
-                (return early)  ┌──────────────────────┐
+                (return early)  ┌───────────────────────┐
                                 │  n <= 50 (small)?     │
                                 └──────────┬────────────┘
                                       Yes ──┴── No
                                        │         │
                                 Insertion Sort   ▼
-                                            ┌─────────────────────────┐
+                                            ┌──────────────────────────┐
                                             │ Nearly sorted?           │
                                             │ (sampled inversion       │
                                             │  ratio <= 10%)           │

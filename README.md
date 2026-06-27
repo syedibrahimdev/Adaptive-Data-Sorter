@@ -41,7 +41,8 @@ This project builds a system that checks the data's current state first, then pi
 ---
 
 ## 🧠 How This System Decides
-┌─────────────────────┐
+
+                ┌─────────────────────┐
                 │   Is data sorted?    │
                 └──────────┬───────────┘
                       Yes ──┴── No
